@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <title>Entrar</title>
+        <link rel="stylesheet" href="principal.css" />
+        <script src="principal.js"></script>
+        <script>
+            window.onload = function(  ){
+                if( sessionStorage.getItem( "tipo" ) == 'cliente' ){
+                    var escolha = document.getElementById( 'no-cli' );
+                    escolha.style.display = 'none';
+                }
+                else{
+                    var escolha = document.getElementById( 'cad-imo' );
+                    escolha.style.display = 'none';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <nav class="menu container">
+                <a href="index.html" class="logo">
+                    <h3>Smart<span>MOB</span></h3>
+                </a>
+                <ul class="links">
+                    <li><a href="#catalogo">Catálogo</a></li>
+                    <li><a href="#sobre-nos">Sobre nós</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <ul class="logar">
+                    <li><a onclick="tipo( 'cad' )">Cadastrar</a></li>
+                    <li><a onclick="tipo( 'log' )">Logar</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="container" id="cad-imo">
+                <div class="box-forms">
+                    <section class="cadastro" id="cadastro">
+                        <h2>Cadastro de imóveis</h2>
+                        <form action="cadastra-imoveis.php" method="POST">
+                            <label for="bairro">Digite o bairro: &emsp;</label>
+                            <input type="texto" name="bairro" id="bairro" required autofocus><br/>
+                            <label for="cidade">Digite a cidade: &emsp;</label>
+                            <input type="texto" name="cidade" id="cidade" required><br/>
+                            <label for="preco">Digite o preço: &emsp;</label>
+                            <input type="texto" name="preco" id="preco" required><br/>
+                            <input type="submit" placeholder="Cadastrar">
+                        </form>
+                    </section>
+                </div>
+            </div>
+            <h1 id="no-cli">Você precisa logar como cliente para cadastrar imóveis.</h1>
+        </main>
+        <footer>
+            <div class="infos">
+                <div class="container">
+                        <p>Telefone: <span>(11) 99999-9999</span></p>
+                        <p>E-mail: <a href="mailto:exemplo@examplo.com?subject=Assunto"> exemplo@examplo.com</a></p>
+                    </div>
+                </div>
+                <div class="copy">
+                    <div class="container">
+                        &copy;All rights reserved.
+                    </div>
+            </div>
+        </footer>
+    </body>
+</html>

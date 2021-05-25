@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <title>SmartMOB</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&family=Raleway&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="principal.css" />
+        <script src="principal.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="menu container">
+                <a href="index.html" class="logo">
+                    <h3>Smart<span>MOB</span></h3>
+                </a>
+                <ul class="links">
+                    <li><a href="#catalogo">Catálogo</a></li>
+                    <li><a href="#sobre-nos">Sobre nós</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <ul class="logar">
+                    <li><a onclick="tipo( 'cad' )">Cadastrar</a></li>
+                    <li><a onclick="tipo( 'log' )">Logar</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="banner">
+            <h1>Encontre o lugar <br> perfeito para morar,<br> aqui mesmo na SmartMOB!</h1>
+        </section>
+        <main class="container">
+            <section class="busca">
+                <form action="#" method="GET">
+                    <div class="select-wrapper">
+                        <label for="lugar">Lugar</label>
+                        <select name="lugar" id="">
+                            <option value="sp">São Paulo</option>
+                            <option value="rj">Rio de Janeiro</option>
+                            <option value="mg">Minas Gerais</option>
+                        </select>
+                    </div>
+                        
+                    <div class="select-wrapper">
+                        <label for="tipoDePropriedade">Tipo de Propriedade</label>
+                        <select name="tipoDePropriedade" id="">
+                            <option value="alugar">Alugar</option>
+                            <option value="comprar">Comprar</option>
+                        </select>
+                    </div>
+                    <div class="select-wrapper">
+                        <label for="precoMaximo">Preço Máximo</label>
+                        <select name="precoMaximo" id="">
+                            <option value="100">R$ 100.000</option>
+                            <option value="200">R$ 200.000</option>
+                            <option value="300">R$ 300.000</option>
+                            <option value="400">R$ 400.000</option>
+                            <option value="500">R$ 500.000</option>
+                            <option value="600">R$ 600.000</option>
+                            <option value="700">R$ 700.000</option>
+                            <option value="800">R$ 800.000</option>
+                            <option value="900">R$ 900.000</option>
+                            <option value="1000">R$ 10.000.000</option>
+                        </select>
+                    </div>
+                    <button type="submit">
+                        Buscar
+                    </button>
+                </form>
+            </section>
+            <section class="sobre">
+                <img src="foto-sobre.jpg" alt="">
+                <article>
+                    <h6 id="sobre-nos">Sobre nós</h6>
+                    <h3>Nós providenciamos a melhor propriedade para você!</h3>
+                    <p>
+                        Nosso produto tem como clientes alvo as empresas imobiliárias que necessitam de um 
+                        sistema de gerenciamento automatizado para os seus processos internos. O SmartMOB 
+                        (nome provisório) é um sistema de gerenciamento imobiliário que disponibiliza funções 
+                        para controle de receita, controle de funcionários, buscas de imóveis por filtros e 
+                        controle de clientes. <br> Diferentemente de produtos como o Sistema para Imobiliárias 
+                        Univen, o I21 e o Micro House o nosso software proporciona o gerenciamento de 
+                        todos os processos da empresa, sem retirar a autonomia da mesma, garantindo que 
+                        o sistema seja apenas um facilitador dos processos ao invés de implantar novas 
+                        regras e regulamentos, não apenas isso, mais o produto também trata cada empresa 
+                        individualmente, sem concorrência interna para manter os preços dos imóveis competitivos.
+                    </p>
+                </article>
+            </section>
+            <section class="catalogo" id="catalogo">
+                <h1>Catálogo</h1>
+                <a href="catalogo.php">Ver todos</a>
+                <div class="box-homes">
+                    <div class="single-home">
+                        <img src="casa-mk.jpg" alt="">
+                        <h5 class="preco">R$ 150.000</h5>
+                        <div class="row-info">
+                            <h4 class="bairro">Tatuapé</h4>
+                            <div class="inside">
+                                <p class="quartos">4</p>
+                                <p class="banheiros">3</p>
+                            </div>
+                        </div>
+                        <h6 class="cidade">São Paulo, SP</h6>
+                    </div>
+                    <div class="single-home">
+                        <img src="casa-mk.jpg" alt="">
+                        <h5 class="preco">R$ 150.000</h5>
+                        <div class="row-info">
+                            <h4 class="bairro">Tatuapé</h4>
+                            <div class="inside">
+                                <p class="quartos">4</p>
+                                <p class="banheiros">3</p>
+                            </div>
+                        </div>
+                        <h6 class="cidade">São Paulo, SP</h6>
+                    </div>
+                    <div class="single-home">
+                        <img src="casa-mk.jpg" alt="">
+                        <h5 class="preco">R$ 150.000</h5>
+                        <div class="row-info">
+                            <h4 class="bairro">Tatuapé</h4>
+                            <div class="inside">
+                                <p class="quartos">4</p>
+                                <p class="banheiros">3</p>
+                            </div>
+                        </div>
+                        <h6 class="cidade">São Paulo, SP</h6>
+                    </div>
+                    <div class="single-home">
+                        <img src="casa-mk.jpg" alt="">
+                        <h5 class="preco">R$ 150.000</h5>
+                        <div class="row-info">
+                            <h4 class="bairro">Tatuapé</h4>
+                            <div class="inside">
+                                <p class="quartos">4</p>
+                                <p class="banheiros">3</p>
+                            </div>
+                        </div>
+                        <h6 class="cidade">São Paulo, SP</h6>
+                    </div>
+                </div>
+            </section>
+            <section class="contato" id="contato">
+                <h1>Tem alguma dúvida?<br>Deixe nós ajudarmos você</h1>
+                <div class="email-wrapper">
+                    <form>
+                        <input type="email" placeholder="youremail@gmail.com">
+                        <button>Enviar</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="infos">
+                <div class="container">
+                        <p>Telefone: <span>(11) 99999-9999</span></p>
+                        <p>E-mail: <a href="mailto:exemplo@examplo.com?subject=Assunto"> exemplo@examplo.com</a></p>
+                    </div>
+                </div>
+                <div class="copy">
+                    <div class="container">
+                        &copy;All rights reserved.
+                    </div>
+                </div>
+            </footer>
+        </body>
+        </html>

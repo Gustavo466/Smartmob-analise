@@ -1,0 +1,401 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 300ms ease-in-out;
+}
+
+body,
+html {
+  font-family: "Quicksand", sans-serif;
+  background: #edf2f4;
+}
+
+.container {
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background: #ef233c;
+  padding: 20px;
+}
+
+header nav.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav.menu .logo {
+  text-decoration: none;
+  color: #edf2f4;
+  font-size: 1.5rem;
+}
+header nav.menu a.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+header nav.menu .logo span {
+  color: #4b4b4b;
+  font-weight: 700;
+}
+
+nav.menu ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  font-size: 1.1rem;
+}
+
+nav.menu ul li a {
+  text-decoration: none;
+  color: #edf2f4;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+nav.menu .logar li:first-child a {
+  background-color: #860016;
+  border-radius: 10px 0 10px 10px;
+}
+
+nav.menu ul li a:hover {
+  background-color: #d90429;
+  border-radius: 6px;
+}
+
+section.banner {
+  background: url(teste.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  color: #edf2f4;
+  height: 350px;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+}
+
+section.banner h1 {
+  width: 60%;
+  word-spacing: 5px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.busca {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+}
+
+.busca form {
+  width: clamp(400px, 800px, 1000px);
+  height: 90px;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  background: #fff;
+  border-radius: 50px;
+  padding: 20px 35px;
+  box-shadow: 0 3px 6px #bbbbbb;
+}
+
+.busca .select-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 150px;
+  font-size: 15px;
+}
+
+.select-wrapper select {
+  border: 0;
+  -webkit-appearance: none;
+}
+
+.select-wrapper select option {
+  font-family: "Quicksand", sans-serif;
+}
+
+.busca button {
+  margin-left: auto;
+  width: 120px;
+  height: 40px;
+  border: 0;
+  outline: none;
+  background-color: #ef233c;
+  border-radius: 60px;
+  color: #ffffff;
+}
+
+.sobre {
+  display: flex;
+  gap: 30px;
+}
+
+.sobre article,
+.sobre img {
+  width: 50%;
+}
+
+.sobre img {
+  border-radius: 70px 0 70px 70px;
+}
+
+.sobre article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sobre article h6 {
+  color: #ef233c;
+  font-size: 15px;
+}
+
+.sobre article h3 {
+  font-size: 24px;
+  color: #770114;
+}
+
+section.catalogo {
+  width: 100%;
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+section.catalogo h1 {
+  color: #d90429;
+  font-size: 2.5rem;
+  text-decoration: underline;
+}
+
+section.catalogo a {
+  margin-left: auto;
+  text-decoration: none;
+  margin: 20px 0 20px auto;
+  color: #d90429;
+}
+
+.catalogo .box-homes {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+
+.catalogo .box-homes .single-home {
+  width: 23%;
+  height: 300px;
+  padding: 5px;
+  box-shadow: 0 3px 6px #bbbbbb;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 40px 0 40px;
+}
+
+.box-homes .single-home img {
+  width: 100%;
+  height: 200px;
+  border-radius: 0 40px 0 40px;
+}
+
+.box-homes .single-home h5 {
+  margin-top: 10px;
+  align-self: flex-end;
+  color: #222222;
+  font-size: 20px;
+}
+
+.box-homes .single-home .row-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+
+.box-homes .single-home .row-info h4 {
+  color: #222222;
+  font-size: 20px;
+}
+
+.box-homes .single-home .row-info .inside {
+  display: flex;
+  gap: 25px;
+}
+
+.box-homes .single-home h6 {
+  padding: 0 10px;
+}
+
+section.contato {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  text-align: center;
+  margin: 70px 0;
+}
+
+section.contato h1 {
+  font-size: 2rem;
+  color: #d8475f;
+}
+
+section.contato form {
+  width: 50%;
+  height: 50px;
+  padding: 10px 15px;
+  border-radius: 50px;
+  box-shadow: 0 3px 6px #bbbbbb;
+  background: #ffffff;
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+section.contato form input {
+  width: 70%;
+  outline: none;
+  border: 0;
+}
+
+section.contato form button {
+  width: 30%;
+  outline: none;
+  border: 0;
+  background-color: #ef233c;
+  border-radius: 40px;
+  color: #ffffff;
+}
+
+.box-forms {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 25px 50px;
+  margin-bottom: 20px;
+}
+
+.box-forms .cadastro,
+.box-forms .login {
+  width: 50%;
+}
+
+.box-forms section.cadastro h2,
+.box-forms section.login h2 {
+  font-size: 40px;
+  color: #242424;
+}
+
+.box-forms section.login h2 {
+  margin-bottom: 75px;
+}
+
+.box-forms .cadastro #escolha {
+  margin: 25px 0;
+  display: flex;
+  gap: 10px;
+}
+
+.box-forms .cadastro #escolha button {
+  background-color: #db5d6c;
+  width: 100px;
+  height: 25px;
+  color: #ffffff;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.box-forms .cadastro #escolha button:hover {
+  background-color: #df293e;
+}
+
+.box-forms .cadastro form,
+.box-forms .login form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.box-forms .cadastro form label,
+.box-forms .login form label {
+  font-size: 15px;
+  color: #15162f;
+}
+
+.box-forms .cadastro form input,
+.box-forms .login form input {
+  border: 0;
+  outline: none;
+  height: 25px;
+  border-bottom: 1px solid #ef233c;
+  background: transparent;
+}
+
+.box-forms .cadastro form input[type="submit"],
+.box-forms .login form input[type="submit"] {
+  background-color: #ef233c;
+  width: 100px;
+  height: 25px;
+  color: #ffffff;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.box-forms .cadastro form input[type="submit"]:hover,
+.box-forms .login form input[type="submit"]:hover {
+  background: #770114;
+}
+
+.box-catalogo {
+  display: flex;
+}
+
+footer {
+  color: #8d99ae;
+}
+
+footer .infos {
+  background: #2b2d42;
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+footer .infos p:first-child {
+  margin-bottom: 10px;
+}
+
+footer .infos p:first-child span {
+  margin-bottom: 10px;
+  color: #cadaf5;
+}
+
+footer .infos a {
+  text-decoration: none;
+  color: #cadaf5;
+}
+
+footer .copy {
+  background: #151620;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+#form{
+  display: none;
+}

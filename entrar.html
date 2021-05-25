@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <title>Entrar</title>
+        <link rel="stylesheet" href="principal.css" />
+        <script src="principal.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="menu container">
+                <a href="index.html" class="logo">
+                    <h3>Smart<span>MOB</span></h3>
+                </a>
+                <ul class="links">
+                    <li><a href="#catalogo">Catálogo</a></li>
+                    <li><a href="#sobre-nos">Sobre nós</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <ul class="logar">
+                    <li><a onclick="tipo( 'cad' )">Cadastrar</a></li>
+                    <li><a onclick="tipo( 'log' )">Logar</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <div class="box-forms">
+                        <section class="cadastro" id="cadastro">
+                            <h2>Cadastro</h2>
+                            <section id="escolha">
+                                <button type="button" onclick="gerente( )">Novo gerente</button>
+                                <button type="button" onclick="corretor(  )">Novo corretor</button>
+                                <button type="button" onclick="cliente(  )">Novo cliente</button>
+                            </section>
+                            <form action="cadastra.php" method="POST" id="form">
+                                <label for="email">Digite o e-mail: &emsp;</label>
+                                <input type="email" name="email" id="email" required autofocus><br/>
+                                <label for="senha">Digite a senha: &emsp;</label>
+                                <input type="password" name="senha" id="senha" required><br/>
+                                <label for="telefone">Digite o número de telefone: &emsp;</label>
+                                <input type="tel" name="telefone" id="telefone" required><br/>
+                                <input type="hidden" id="tipo" name="tipo">
+                                <input type="submit" placeholder="Cadastrar">
+                            </form>
+                        </section>
+                    <section class="login" id="login">
+                        <h2>Login</h2>
+                        <form action="login.php" method="POST">
+                            <label for="email">Digite seu e-mail: &emsp;</label>
+                            <input type="email" name="email" id="email" required autofocus><br/>
+                            <label for="senha">Digite sua senha: &emsp;</label>
+                            <input type="password" name="senha" id="senha" required><br/>
+                            <input type="submit" placeholder="Entrar">
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="infos">
+                <div class="container">
+                        <p>Telefone: <span>(11) 99999-9999</span></p>
+                        <p>E-mail: <a href="mailto:exemplo@examplo.com?subject=Assunto"> exemplo@examplo.com</a></p>
+                    </div>
+                </div>
+                <div class="copy">
+                    <div class="container">
+                        &copy;All rights reserved.
+                    </div>
+            </div>
+        </footer>
+    </body>
+</html>
